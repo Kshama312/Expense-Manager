@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import { useNavigate } from "react-router-dom";
 import { FaUserCircle } from "react-icons/fa";
 import { auth } from "../firebase"; // Import Firebase auth
 import { sendPasswordResetEmail } from "firebase/auth";
@@ -8,7 +7,6 @@ import "./Profile.css";
 const Profile = () => {
   const [user, setUser] = useState(null);
   const [profilePic, setProfilePic] = useState(null);
-  const navigate = useNavigate();
 
   // Fetch user details from Firebase Auth
   useEffect(() => {

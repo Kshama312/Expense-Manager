@@ -1,43 +1,74 @@
 .dashboard-container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  color: white;
-  padding: 20px;
   min-height: 100vh;
 }
 
-.dashboard-content h1 {
-  margin-bottom: 20px;
+.dashboard-content {
+  flex-grow: 1;
+  padding: 20px;
+  text-align: center;
+  color: white;
 }
 
-/* Responsive flexbox for horizontal alignment */
+h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+/* Summary Section */
+.summary-container {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 0;
+  gap : 20px;
+}
+
+.summary-card {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 30%;
+}
+
+.summary-card h2 {
+  margin: 0;
+  color: #5B0E96;
+}
+
+.summary-card p {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.over-budget {
+  background: #E00063;
+  color: white;
+}
+
+/* Charts Section */
 .chart-container {
   display: flex;
-  flex-wrap: wrap;  /* Allows wrapping for responsiveness */
-  justify-content: center; /* Centers items */
-  gap: 20px;
-  width: 100%;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 30px;
+  gap : 20px;
 }
 
-/* Cards with dynamic width */
 .chart-card {
   background: white;
   padding: 20px;
   border-radius: 10px;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   text-align: center;
- /* Ensures they expand equally */
-  min-width: 300px; /* Ensures they don't get too small */
-  max-width: 400px; /* Controls max width */
-  min-height: 350px;
+  width: 30%;
+ 
 }
 
-/* Mobile-friendly adjustments */
-@media (max-width: 900px) {
-  .chart-container {
-    flex-direction: column;
-    align-items: center;
-  }
+.chart-card h2 {
+  margin-bottom: 10px;
+  color: #5B0E96;
 }

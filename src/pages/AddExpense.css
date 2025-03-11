@@ -5,66 +5,77 @@
   align-items: center;
   justify-content: center;
   padding: 20px;
+ 
 }
 
 .expense-titl {
   color: white;
-  font-size: 35px;
+  font-size: 40px;
   font-weight: bold;
-  margin-top:10px;
+  margin-bottom: 20px;
 }
 
-.expense-form {
+.expense-form,
+.budget-form,
+.budget-overview {
   background: white;
-  padding: 20px;
+  padding: 25px; /* Increased padding */
   border-radius: 12px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  width: 450px;
-  max-width: 400px;
+  width: 150%;
+  max-width: 400px; /* Increased width */
   display: flex;
   flex-direction: column;
+  margin-bottom: 25px; /* Increased margin for better spacing */
 }
 
-.expense-form label {
+.expense-form label,
+.budget-form label {
   font-weight: bold;
-  margin-top:20px;
+  margin-top: 15px;
 }
 
 .expense-form input,
 .expense-form select,
-.expense-form textarea {
+.expense-form textarea,
+.budget-form input {
   width: 95%;
-  padding: 10px;
+  padding: 12px; /* Slightly increased padding */
   margin-top: 5px;
   border: 1px solid #ccc;
   border-radius: 8px;
+  font-size: 16px;
 }
 
 .expense-form textarea {
   resize: none;
-  height: 80px;
+  height: 100px; /* Increased height for better input visibility */
 }
 
-.save-expense-btn {
+.save-expense-btn,
+.set-budget-btn {
   margin-top: 15px;
   background-color: #a00055;
   color: white;
   font-size: 16px;
   font-weight: bold;
   border: none;
-  padding: 10px;
+  padding: 14px; /* Slightly larger button */
   border-radius: 8px;
   cursor: pointer;
+  transition: background 0.3s;
 }
 
-.save-expense-btn:hover {
+.save-expense-btn:hover,
+.set-budget-btn:hover {
   background-color: #870044;
 }
+
 .success-popup {
   background-color: white;
   color: black;
   padding: 10px;
-  position: absolute;
+  position: fixed;
   top: 10px;
   right: 10px;
   border-radius: 5px;
@@ -80,3 +91,24 @@
   100% { opacity: 0; transform: translateY(-10px); }
 }
 
+.budget-overview {
+  text-align: center;
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  max-width: 500px; /* Increased width */
+  width: 135%;
+}
+
+.budget-overview h3 {
+  font-size: 20px; /* Increased font size */
+  color: #333;
+  margin: 5px 0;
+}
+
+.warning-text {
+  color: red;
+  font-weight: bold;
+  margin-top: 10px;
+}
