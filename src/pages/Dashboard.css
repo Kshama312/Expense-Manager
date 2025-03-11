@@ -1,0 +1,43 @@
+.dashboard-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: white;
+  padding: 20px;
+  min-height: 100vh;
+}
+
+.dashboard-content h1 {
+  margin-bottom: 20px;
+}
+
+/* Responsive flexbox for horizontal alignment */
+.chart-container {
+  display: flex;
+  flex-wrap: wrap;  /* Allows wrapping for responsiveness */
+  justify-content: center; /* Centers items */
+  gap: 20px;
+  width: 100%;
+}
+
+/* Cards with dynamic width */
+.chart-card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+ /* Ensures they expand equally */
+  min-width: 300px; /* Ensures they don't get too small */
+  max-width: 400px; /* Controls max width */
+  min-height: 350px;
+}
+
+/* Mobile-friendly adjustments */
+@media (max-width: 900px) {
+  .chart-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}

@@ -1,0 +1,68 @@
+.register-container {
+  width: 350px;
+  margin: auto;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+.input-group {
+  margin-bottom: 15px;
+}
+
+input {
+  width: 95%;
+  padding: 10px;
+  border-radius: 25px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+.register-btn {
+  width: 100%;
+  padding: 10px;
+  border-radius: 25px;
+  border: none;
+  background: linear-gradient(90deg, #6a11cb, #ff0080);
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.forgot-password {
+  color: #007bff;
+  cursor: pointer;
+}
+
+.divider {
+  margin: 10px 0;
+  text-transform: uppercase;
+}
+
+.google-btn {
+  width: 100%;
+  padding: 10px;
+  border-radius: 25px;
+  border: none;
+  background: #f1f1f1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.google-icon {
+  width: 20px;
+  margin-right: 10px;
+}
+
+.login-link {
+  color: #6a11cb;
+  font-weight: bold;
+}

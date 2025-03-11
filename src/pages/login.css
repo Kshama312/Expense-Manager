@@ -1,0 +1,142 @@
+/* src/pages/Login.css */
+.auth-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .card {
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    text-align: center;
+  }
+  
+  h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+  }
+  
+  input {
+    width: 92%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    font-size: 16px;
+    text-indent: 10px;
+    outline: none;
+  }
+  
+  input:focus {
+    border-color: #6a11cb;
+  }
+  
+  button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .btn-primary {
+    background: linear-gradient(to right, #6a11cb, #ff0080);
+    color: white;
+    margin-top: 10px;
+  }
+  
+  .btn-primary:hover {
+    opacity: 0.9;
+  }
+  
+  .forgot-password {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 14px;
+    margin-top: 10px;
+    display: inline-block;
+  }
+  
+  .google-login {
+    background: white;
+    border: 1px solid #ddd;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 15px;
+  }
+  
+  .google-icon {
+    width: 20px;
+  }
+  
+  p {
+    font-size: 14px;
+    margin-top: 15px;
+    color: #555;
+  }
+  
+  p a {
+    color: #6a11cb;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  p a:hover {
+    text-decoration: underline;
+  }
+  /* OR separator */
+.separator {
+    display: flex;
+    align-items: center;
+    margin: 15px 0;
+    text-align: center;
+  }
+  
+  .separator span {
+    background: white;
+    padding: 0 10px;
+    font-size: 14px;
+    color: #777;
+  }
+  
+  .separator::before,
+  .separator::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: #ddd;
+    margin: 0 10px;
+  }
+  .google-login {
+  background: white;
+  border: 1px solid #ddd;
+  color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px; /* Make the button circular */
+  height: 50px;
+  border-radius: 50%;
+  font-size: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin: 10px auto;
+}
+
+.google-login:hover {
+  background: #f0f0f0;
+}
+
+.google-icon {
+  color: #db4437; /* Google's red color */
+}

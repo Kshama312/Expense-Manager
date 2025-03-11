@@ -1,0 +1,65 @@
+body {
+  background: linear-gradient(to bottom, #5e0063, #9b005e); /* Matching the Add Expense page */
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+.expense-history-container {
+  max-width: 500px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  background: white; /* White card */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.expense-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: black; /* Making text readable */
+}
+
+.no-expenses {
+  font-size: 1rem;
+  color: #666;
+}
+
+.expense-list {
+  list-style: none;
+  padding: 0;
+}
+
+.expense-item {
+  background: white; /* Blue background inside the card */
+  color: white; /* White text for readability */
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 450px;
+  
+}
+
+.expense-details {
+  text-align: left;
+}
+
+.delete-icon {
+  color: #161617;
+  cursor: pointer;
+  font-size: 1.2rem;
+  transition: transform 0.2s;
+}
+
+.delete-icon:hover {
+  transform: scale(1.1);
+  color: #ff3b3b;
+}

@@ -1,0 +1,49 @@
+.hamburger {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  cursor: pointer;
+  color: white;
+  z-index: 1000;
+}
+
+.sidebar {
+  position: fixed;
+  left: -250px;
+  top: 0;
+  width: 250px;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  transition: 0.3s ease-in-out;
+  color: white;
+  padding-top: 50px;
+  z-index: 999;
+}
+
+.sidebar.open {
+  left: 0;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.sidebar ul li:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* Logout Below Profile */
+.sidebar .logout {
+  color: red;
+  font-weight: bold;
+}
